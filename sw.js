@@ -1,5 +1,5 @@
 // 復号係：enc/ の暗号化ファイルを鍵で戻して渡す
-const CFG={"salt":"LdOx19TORCGi5TT5MtBSUA==","iter":600000,"hours":24};let KEY=null,EXP=0;
+const CFG={"salt":"E/lEnptucUTG3V70JY4m7w==","iter":600000,"hours":24};let KEY=null,EXP=0;
 const TYPES={html:'text/html; charset=utf-8',js:'text/javascript; charset=utf-8',css:'text/css; charset=utf-8',json:'application/json',csv:'text/csv; charset=utf-8',md:'text/plain; charset=utf-8',png:'image/png',jpg:'image/jpeg',jpeg:'image/jpeg',glb:'model/gltf-binary',mp4:'video/mp4',svg:'image/svg+xml'};
 const DIRS=["viewer","photos","data"];
 function db(){return new Promise((ok,ng)=>{const r=indexedDB.open('ih474',1);r.onupgradeneeded=()=>r.result.createObjectStore('k');r.onsuccess=()=>ok(r.result);r.onerror=()=>ng(r.error)})}
